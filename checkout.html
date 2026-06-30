@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Premium Tech Store</title>
+</head>
+<body style="margin:0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f9f9f9; color: #333;">
+
+    <header style="background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <span style="color: #008060; font-size: 24px; font-weight: bold; letter-spacing: 1px;">
+                    PREMIUM TECH STORE
+                </span>
+            </a>
+        </div>
+        <nav style="display: flex; gap: 30px;">
+            <a href="index.html" style="text-decoration: none; color: #333; font-weight: 500; font-size: 16px; transition: 0.3s;">Home</a>
+            <a href="catalog.html" style="text-decoration: none; color: #333; font-weight: 500; font-size: 16px; transition: 0.3s;">Catalog</a>
+            <a href="about.html" style="text-decoration: none; color: #333; font-weight: 500; font-size: 16px; transition: 0.3s;">About Us</a>
+            <a href="contact.html" style="text-decoration: none; color: #333; font-weight: 500; font-size: 16px; transition: 0.3s;">Contact</a>
+        </nav>
+        <div class="user-actions" style="display: flex; align-items: center; gap: 15px;">
+            <span style="color: #666; font-size: 14px; background: #f0f2f5; padding: 6px 15px; border-radius: 20px; border: 1px solid #e0e0e0;">
+                👤 Demo User
+            </span>
+            <a href="login.html" style="text-decoration: none; color: #d32f2f; font-weight: bold; font-size: 14px; border-left: 1px solid #ddd; padding-left: 15px;">Logout</a>
+        </div>
+    </header>
+
+    <div style="max-width: 600px; margin: 40px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); min-height: 40vh; box-sizing: border-box;">
+        <h2 style="margin-top: 0; color: #222;">Confirm Your Order</h2>
+        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+        
+        <form onsubmit="placeOrderMock(event)">
+            <label style="font-weight: 600; color: #555; display: block; margin-bottom: 8px;">Shipping Address:</label>
+            <textarea id="shippingAddress" rows="4" required style="width:100%; padding:12px; margin-bottom: 20px; border:1px solid #ddd; border-radius:6px; box-sizing: border-box; font-family: inherit; outline: none; resize: none;" placeholder="House #, Street Name, Sector/Area, City..."></textarea>
+            
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border: 1px solid #e1e3e5; margin-bottom: 25px;">
+                <p style="font-size: 1.1rem; margin: 0; color: #333;">Payment Method: <strong>Cash on Delivery (COD)</strong></p>
+                <small style="color: #6d7175; margin-top: 5px; display: inline-block;">Pay with cash upon delivery at your doorstep anywhere in Pakistan.</small>
+            </div>
+            
+            <button type="submit" style="width:100%; padding:15px; background:#008060; color:white; border:none; border-radius:6px; font-weight:bold; font-size: 1rem; cursor:pointer; transition: background 0.2s;">
+                PLACE ORDER NOW
+            </button>
+        </form>
+    </div>
+
+    <footer style="background: #202223; color: #ffffff; padding: 50px 5% 20px; margin-top: 50px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; max-width: 1200px; margin: 0 auto;">
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #fff;">About Our Store</h3>
+                <p style="color: #b5b5b5; line-height: 1.6;">We provide the best premium gadgets at the most affordable prices in Pakistan. Quality is our priority.</p>
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #fff;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="index.html" style="color: #b5b5b5; text-decoration: none;">Home</a></li>
+                    <li><a href="#" style="color: #b5b5b5; text-decoration: none;">Privacy Policy</a></li>
+                    <li><a href="#" style="color: #b5b5b5; text-decoration: none;">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #fff;">Newsletter</h3>
+                <p style="color: #b5b5b5;">Get updates on new products and offers.</p>
+                <input type="email" placeholder="Enter your email" style="padding: 10px; width: 80%; border-radius: 4px; border: none; outline: none;">
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; color: #888; font-size: 0.9rem;">
+            &copy; 2026 Created by Sadia.
+        </div>
+    </footer>
+
+    <script>
+        function placeOrderMock(e) {
+            e.preventDefault();
+            const addr = document.getElementById('shippingAddress').value.trim();
+            
+            if(addr !== "") {
+                alert("🎉 Order Placed Successfully!\n\nYour package will be delivered via Cash on Delivery at:\n" + addr + "\n\nThank you for exploring Sadia's Portfolio Demo Project!");
+                // Clear state simulation and return back to store home route
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
+</html>

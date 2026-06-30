@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Tech Store | Home</title>
+</head>
+<body style="margin:0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #ffffff; color: #333;">
+
+    <header style="background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <span style="color: #008060; font-size: 24px; font-weight: bold; letter-spacing: 1px;">
+                    PREMIUM TECH STORE
+                </span>
+            </a>
+        </div>
+        <nav style="display: flex; gap: 30px;">
+            <a href="index.html" style="text-decoration: none; color: #008060; font-weight: 600; font-size: 16px; transition: 0.3s;">Home</a>
+            <a href="catalog.html" style="text-decoration: none; color: #333; font-weight: 500; font-size: 16px; transition: 0.3s;">Catalog</a>
+            <a href="about.html" style="text-decoration: none; color: #333; font-weight: 500; font-size: 16px; transition: 0.3s;">About Us</a>
+            <a href="contact.html" style="text-decoration: none; color: #333; font-weight: 500; font-size: 16px; transition: 0.3s;">Contact</a>
+        </nav>
+        <div class="user-actions" style="display: flex; align-items: center; gap: 15px;">
+            <span style="color: #666; font-size: 14px; background: #f0f2f5; padding: 6px 15px; border-radius: 20px; border: 1px solid #e0e0e0;">
+                👤 Demo User
+            </span>
+            <a href="login.html" style="text-decoration: none; color: #008060; font-weight: bold; font-size: 14px; border-left: 1px solid #ddd; padding-left: 15px;">Login / Admin</a>
+        </div>
+    </header>
+
+    <div style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; height: 450px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; margin-bottom: 40px; padding: 0 20px;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 10px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Premium Tech Store</h1>
+        <p style="font-size: 1.3rem; margin-bottom: 25px; max-width: 600px;">Discover the latest gadgets, from high-end laptops to flagship smartphones at best prices.</p>
+        
+        <form action="catalog.html" method="GET" style="display: flex; width: 100%; max-width: 550px; gap: 10px; background: white; padding: 6px; border-radius: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+            <input type="text" name="search" placeholder="What are you looking for today?" style="flex: 1; border: none; padding: 10px 20px; font-size: 1rem; border-radius: 25px; outline: none; color: #333;">
+            <button type="submit" style="background: #008060; color: white; border: none; padding: 10px 30px; border-radius: 25px; font-weight: bold; cursor: pointer; transition: 0.3s; font-size: 1rem;">Search</button>
+        </form>
+    </div>
+
+    <div style="max-width: 1200px; margin: 0 auto 50px; padding: 0 20px;">
+        <h2 style="text-align: center; margin-bottom: 30px; font-size: 2rem; color: #222;">Shop By Category</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <a href="catalog.html" style="text-decoration: none; text-align: center; background: #f8f9fa; padding: 25px; border-radius: 10px; color: #333; font-weight: 600; box-shadow: 0 2px 5px rgba(0,0,0,0.02); border: 1px solid #eaeaea; transition: 0.3s;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 10px;">💻</span> Laptops
+            </a>
+            <a href="catalog.html" style="text-decoration: none; text-align: center; background: #f8f9fa; padding: 25px; border-radius: 10px; color: #333; font-weight: 600; box-shadow: 0 2px 5px rgba(0,0,0,0.02); border: 1px solid #eaeaea; transition: 0.3s;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 10px;">📱</span> Smartphones
+            </a>
+            <a href="catalog.html" style="text-decoration: none; text-align: center; background: #f8f9fa; padding: 25px; border-radius: 10px; color: #333; font-weight: 600; box-shadow: 0 2px 5px rgba(0,0,0,0.02); border: 1px solid #eaeaea; transition: 0.3s;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 10px;">🎧</span> Accessories
+            </a>
+        </div>
+    </div>
+
+    <div style="max-width: 1200px; margin: 0 auto 60px; padding: 0 20px;">
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2rem; color: #222;">Featured Products</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px;">
+            
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; display: flex; flex-direction: column;">
+                <img src="https://images.unsplash.com/photo-1496181130204-755241524eab?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="margin: 0 0 10px; font-size: 1.2rem; color: #222;">MacBook Pro 14"</h3>
+                        <p style="color: #666; font-size: 0.9rem; height: 40px; overflow: hidden; margin-bottom: 15px;">
+                            Experience ultimate performance with Apple M3 chip. Stunning Retina XDR display...
+                        </p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.2rem; font-weight: bold; color: #008060;">Rs. 450,000</span>
+                        <a href="product_details.html" style="background: #2c3e50; color: white; padding: 8px 16px; text-decoration: none; border-radius: 5px; font-size: 0.85rem; font-weight: 500;">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; display: flex; flex-direction: column;">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="margin: 0 0 10px; font-size: 1.2rem; color: #222;">iPhone 15 Pro Max</h3>
+                        <p style="color: #666; font-size: 0.9rem; height: 40px; overflow: hidden; margin-bottom: 15px;">
+                            Titanium design, ultimate A17 Pro gaming chip, and pro camera setup...
+                        </p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.2rem; font-weight: bold; color: #008060;">Rs. 385,000</span>
+                        <a href="product_details.html" style="background: #2c3e50; color: white; padding: 8px 16px; text-decoration: none; border-radius: 5px; font-size: 0.85rem; font-weight: 500;">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="max-width: 1200px; margin: 0 auto 60px; padding: 0 20px;">
+        <div style="background: #f4f7f6; padding: 50px 40px; border-radius: 15px; text-align: center;">
+            <h3 style="font-size: 1.8rem; margin-top: 0; color: #222;">Want to see more?</h3>
+            <p style="color: #555; font-size: 1.1rem; margin-bottom: 25px;">Check out our full collection of premium tech gadgets and high quality accessories.</p>
+            <a href="catalog.html" style="background: #008060; color: white; text-decoration: none; padding: 12px 35px; border-radius: 25px; font-weight: bold; font-size: 1rem; display: inline-block; transition: 0.3s;">
+                Explore Full Catalog →
+            </a>
+        </div>
+    </div>
+
+    <footer style="background: #202223; color: #ffffff; padding: 50px 5% 20px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; max-width: 1200px; margin: 0 auto;">
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #fff;">About Our Store</h3>
+                <p style="color: #b5b5b5; line-height: 1.6;">We provide the best premium gadgets at the most affordable prices in Pakistan. Quality is our priority.</p>
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #fff;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="index.html" style="color: #b5b5b5; text-decoration: none;">Home</a></li>
+                    <li><a href="catalog.html" style="color: #b5b5b5; text-decoration: none;">Catalog</a></li>
+                    <li><a href="#" style="color: #b5b5b5; text-decoration: none;">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #fff;">Newsletter</h3>
+                <p style="color: #b5b5b5;">Get updates on new products and offers.</p>
+                <input type="email" placeholder="Enter your email" style="padding: 10px; width: 80%; border-radius: 4px; border: none; outline: none; background: #fff; color: #333;">
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; color: #888; font-size: 0.9rem;">
+            &copy; 2026 Created by Sadia.
+        </div>
+    </footer>
+
+</body>
+</html>
